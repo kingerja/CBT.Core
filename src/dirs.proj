@@ -6,6 +6,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="MSBuild.Traversal" version="1.0.6-rc1-ga1698990ac" />
-    <ProjectReference Include="**\*.??proj" Exclude="$(MSBuildThisFileFullPath)" />
+    <ProjectReference Include="CBT.Core\CBT.Core.csproj" Exclude="$(MSBuildThisFileFullPath)" />
   </ItemGroup>
 </Project>
