@@ -6,6 +6,8 @@
     <EnlistmentRoot>$(MSBuildThisFileDirectory.TrimEnd('\\'))</EnlistmentRoot>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputPath Condition=" '$(OutputPath)' == '' ">$(EnlistmentRoot)\bin\$(Configuration)\$(Platform)\$(MSBuildProjectName)</OutputPath>
+    <CBTModuleRestoreCommand>$(EnlistmentRoot)\.build\local\NuGet\NuGet.exe</CBTModuleRestoreCommand>
     <CBTNuGetRestoreAdditionalArguments> -Recursive</CBTNuGetRestoreAdditionalArguments>
   </PropertyGroup>
 
