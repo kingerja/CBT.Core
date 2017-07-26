@@ -8,6 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 
     <OutputPath Condition=" '$(OutputPath)' == '' ">$(EnlistmentRoot)\bin\$(Configuration)\$(Platform)\$(MSBuildProjectName)</OutputPath>
+
     <!-- Temporarily use a checked in NuGet.exe -->
     <CBTModuleRestoreCommand>$(EnlistmentRoot)\.build\local\NuGet\NuGet.exe</CBTModuleRestoreCommand>
     <CBTNuGetRestoreAdditionalArguments> -Recursive</CBTNuGetRestoreAdditionalArguments>
