@@ -11,7 +11,6 @@
 
     <!-- Temporarily use a checked in NuGet.exe -->
     <CBTModuleRestoreCommand>$(EnlistmentRoot)\.build\local\NuGet\NuGet.exe</CBTModuleRestoreCommand>
-    <CBTNuGetRestoreAdditionalArguments> -Recursive</CBTNuGetRestoreAdditionalArguments>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(MSBuildProjectExtension)' == '.csproj' And '$(Configuration)' == 'Debug' ">
